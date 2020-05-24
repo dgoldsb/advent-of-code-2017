@@ -21,6 +21,7 @@ fn part_1() -> i32 {
     total
 }
 
+// Compares the integer at `index` and the integer `offset` away. If they match the number is returned, if not 0 is returned.
 fn compare_offset(index: usize, offset: usize) -> i32 {
     let a = &INPUT[index..index + 1].to_owned();
     let index_b = (index + offset) % INPUT.len();
